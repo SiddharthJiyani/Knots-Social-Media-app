@@ -16,13 +16,14 @@
 
 ## 📋 <a name="table">Table of Contents</a>
 <div align="left">
-1. 🤖 [Introduction](#introduction)
-2. ⚙️ [Tech Stack](#tech-stack)
-3. 🔋 [Features](#features)
-4. 🤸 [Quick Start](#quick-start)
-5. 🕸️ [Snippets](#snippets)
-6. 🔗 [Links](#links)
-7. 🚀 [More](#more)
+  
+1. 🤖 [Introduction](#introduction) <br/>
+2. ⚙️ [Tech Stack](#tech-stack) <br/>
+3. 🔋 [Features](#features) <br/>
+4. 🤸 [Quick Start](#quick-start) <br/>
+5. 🕸️ [Snippets](#snippets) <br/>
+6. 🔗 [Links](#links) <br/>
+7. 🚀 [More](#more)<br/>
 
 
 ## <a name="introduction">🤖 Introduction</a>
