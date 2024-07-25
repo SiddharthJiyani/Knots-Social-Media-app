@@ -13,8 +13,9 @@
   </div>
 
 
-## 📋 <a name="table">Table of Contents</a>
 
+## 📋 <a name="table">Table of Contents</a>
+<div align="left">
 1. 🤖 [Introduction](#introduction)
 2. ⚙️ [Tech Stack](#tech-stack)
 3. 🔋 [Features](#features)
@@ -91,6 +92,8 @@ Build a full stack Knots clone using Next.js 14+ with a redesigned look transfor
 👉 **Form Management with React Hook Form**: Efficient management of forms with React Hook Form for a streamlined user input experience.
 
 and many more, including code architecture and reusability 
+
+</div>
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
