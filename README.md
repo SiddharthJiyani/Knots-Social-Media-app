@@ -22,8 +22,6 @@
 3. 🔋 [Features](#features) <br/>
 4. 🤸 [Quick Start](#quick-start) <br/>
 5. 🕸️ [Snippets](#snippets) <br/>
-6. 🔗 [Links](#links) <br/>
-7. 🚀 [More](#more)<br/>
 
 
 ## <a name="introduction">🤖 Introduction</a>
