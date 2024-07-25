@@ -26,7 +26,7 @@
 
 ## <a name="introduction">🤖 Introduction</a>
 
-Build a full stack Knots clone using Next.js 14+ with a redesigned look transformed from a Figma design, user interaction to community management, technical implementation, and various features, including nested deep comments, notifications, real-time-search, and more.  
+Build a full stack Knots app using Next.js 14+ with a redesigned look transformed from a Figma design, user interaction to community management, technical implementation, and various features, including nested deep comments, notifications, real-time-search, and more.  
 
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
