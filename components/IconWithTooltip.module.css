@@ -1,0 +1,54 @@
+.iconWrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 9999px;
+
+  }
+  
+  .icon {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 9999px;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px purple; /* Adjust the color to match the desired border shadow */
+    outline: none;
+    border-radius: 9999px;
+  }
+  
+  .iconWrapper:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    width: 60px;
+    background-color:#495a698a;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the icon */
+    left: 50%;
+    margin-left: -30px; /* Center the tooltip */
+    transition: opacity 0.3s;
+    font-size: 10px;
+  }
+  
+  .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Arrow on the bottom */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
