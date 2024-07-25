@@ -92,7 +92,7 @@ Build a full stack Knots clone using Next.js 14+ with a redesigned look transfor
 
 and many more, including code architecture and reusability 
 
-</div>
+
 
 ## <a name="quick-start">🤸 Quick Start</a>
 
@@ -1739,3 +1739,4 @@ export function formatThreadCount(count: number): string {
 ```
 
 </details>
+</div>
