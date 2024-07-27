@@ -27,7 +27,7 @@ interface Props {
     };
   }[];
   isComment?: boolean;
-  likes: number;
+  likes?: number;
 }
 
 function ThreadCard({
