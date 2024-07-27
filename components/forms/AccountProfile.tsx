@@ -6,6 +6,7 @@ import { useForm } from "react-hook-form";
 import { usePathname, useRouter } from "next/navigation";
 import { ChangeEvent, useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
+import confetti from "canvas-confetti";
 
 import {
   Form,
@@ -53,6 +54,36 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
       bio: user?.bio ? user.bio : "",
     },
   });
+
+  // handle click for confetti
+  const handleClick = () => {
+    const duration = 5 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+ 
+    const randomInRange = (min: number, max: number) =>
+      Math.random() * (max - min) + min;
+ 
+    const interval = window.setInterval(() => {
+      const timeLeft = animationEnd - Date.now();
+ 
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+ 
+      const particleCount = 50 * (timeLeft / duration);
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+      });
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+      });
+    }, 250);
+  };
 
   const onSubmit = async (values: z.infer<typeof UserValidation>) => {
     const blob = values.profile_photo;
@@ -209,7 +240,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
           )}
         />
 
-        <Button type='submit' className='bg-primary-500'>
+        <Button type='submit' onClick={handleClick} className='bg-primary-500'>
           {btnTitle}
         </Button>
       </form>

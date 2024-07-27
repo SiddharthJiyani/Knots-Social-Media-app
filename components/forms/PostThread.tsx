@@ -5,6 +5,8 @@ import { useForm } from "react-hook-form";
 import { useOrganization, useOrganizations } from "@clerk/nextjs";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { usePathname, useRouter } from "next/navigation";
+import { ConfettiButton } from "@/components/magicui/confetti";
+
 
 import {
   Form,
@@ -70,9 +72,10 @@ function PostThread({ userId }: Props) {
           )}
         />
 
-        <Button type='submit' className='bg-primary-500'>
-          Post Thread
-        </Button>
+            <ConfettiButton type="submit" className="bg-primary-500">
+              Post Thread
+            </ConfettiButton>
+        
       </form>
     </Form>
   );
