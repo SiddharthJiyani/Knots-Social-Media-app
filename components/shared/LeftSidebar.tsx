@@ -4,6 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { SignOutButton, SignedIn, useAuth } from "@clerk/nextjs";
+import { toast } from 'react-hot-toast';
+
 
 import { sidebarLinks } from "@/constants";
 
@@ -12,6 +14,14 @@ const LeftSidebar = () => {
   const pathname = usePathname();
 
   const { userId } = useAuth();
+
+  const handleClick = ()=> {
+
+    toast.loading('Loading...', {
+      duration: 1000,
+      position: 'top-center',
+    });
+  }
 
 
   return (
@@ -29,6 +39,7 @@ const LeftSidebar = () => {
               href={link.route}
               key={link.label}
               className={`leftsidebar_link ${isActive && "bg-primary-500 "}`}
+              onClick={handleClick}
             >
               <Image
                 src={link.imgURL}
