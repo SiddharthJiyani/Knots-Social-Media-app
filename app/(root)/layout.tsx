@@ -15,8 +15,8 @@ import { Toaster } from "react-hot-toast";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Knots",
-  description: "A Next.js 13 Mta Knots application",
+  title: "Knots | Social Media App" ,
+  description: "A Next.js 13 - Knots Social media application",
 };
 
 export default function RootLayout({

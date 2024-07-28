@@ -21,7 +21,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { ThreadValidation } from "@/lib/validations/thread";
 import { createThread } from "@/lib/actions/thread.actions";
-
+import toast from "react-hot-toast";
 interface Props {
   userId: string;
 }
@@ -39,6 +39,10 @@ function PostThread({ userId }: Props) {
     },
   });
   const onSubmit = async (values: z.infer<typeof ThreadValidation>) => {
+    toast.loading("Posting thread...", {
+      duration: 1600,
+      position: "top-center",
+    });
     await createThread({
       text: values.thread,
       author: userId,
@@ -72,9 +76,11 @@ function PostThread({ userId }: Props) {
           )}
         />
 
-            <ConfettiButton type="submit" className="bg-primary-500">
+            {/* <ConfettiButton type="submit" className="bg-primary-500"> */}
+            <Button type="submit" className="bg-primary-500">
               Post Thread
-            </ConfettiButton>
+            </Button>
+            {/* </ConfettiButton> */}
         
       </form>
     </Form>
